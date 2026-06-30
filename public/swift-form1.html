@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head><title>SWIFT MT103 Payment Form</title></head>
+<body>
+  <h2>MT103 — Single Customer Credit Transfer</h2>
+  <form id="paymentForm">
+    <label>Sender BIC:</label><br>
+    <input id="senderBic" type="text" placeholder="e.g. DEUTDEDB"/><br><br>
+
+    <label>Receiver BIC:</label><br>
+    <input id="receiverBic" type="text" placeholder="e.g. HSBCGB2L"/><br><br>
+
+    <label>Beneficiary IBAN:</label><br>
+    <input id="iban" type="text" placeholder="e.g. GB29NWBK60161331926819"/><br><br>
+
+    <label>Currency (ISO 4217):</label><br>
+    <input id="currency" type="text" placeholder="e.g. USD"/><br><br>
+
+    <label>Amount:</label><br>
+    <input id="amount" type="text" placeholder="e.g. 10000.00"/><br><br>
+
+    <button id="submitBtn" type="button"
+      onclick="document.getElementById('result').innerText='Payment Submitted';">
+      Submit Payment
+    </button>
+    <p id="result"></p>
+  </form>
+</body>
+</html>
