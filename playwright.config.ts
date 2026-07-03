@@ -6,8 +6,8 @@ export default defineConfig({
   retries: 0,
   reporter: [['html', { open: 'never' }], ['list']],
   use: {
+    headless: process.env.CI ? true : false,
     screenshot: 'only-on-failure',
-    headless: false,
   },
   projects: [
     { name: 'chromium', use: { ...devices['Desktop Chrome'] } },
